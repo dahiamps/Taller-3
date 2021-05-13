@@ -1,0 +1,59 @@
+body {
+    background-image: url(../recursos/fondo.png);
+    background-size: cover;
+}
+
+.card {
+    border-radius: 25px;
+    margin: 50px 50px;
+    background: linear-gradient(-60deg, #16a0849a 0%, #f4d03fa1 100%);
+}
+
+img {
+    border-radius: 25px;
+}
+
+.modal-content {
+    border-radius: 25px;
+    margin: 50px 50px;
+    background: linear-gradient(to right, rgba(58, 181, 177, 0.7) 0%, rgba(61, 153, 190, 0.7) 31%, #56317a 100%);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer h1 {
+    margin: 15px;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+li {
+    color: aqua;
+}
+
+.email {
+    margin-top: 50px;
+}
+
+footer h4 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer hr {
+    color: whitesmoke;
+}
+
+.fab {
+    color: white;
+}

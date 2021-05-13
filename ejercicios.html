@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark " aria-label="Twelfth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
+                    aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbar1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ejercicios.html">Ejercicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="recursos/sueldo.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Salario semanal postobon</h5>
+                            <p class="card-text">Con este programa podras calcular tu salario correspondiente a las
+                                horas
+                                trabajadas.</p>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Calcula tu sueldo semanal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="recursos/gym.jpg" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Masa Corporal</h5>
+                            <p class="card-text">Con este programa podras calcular tu masa corporal para saber el estado
+                                de
+                                tu cuerpo.</p>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">
+                                    Calcula tu masa corporal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Sueldo-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Sueldo empleado postobon</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Nombre:</label>
+                                <input type="text" class="form-control" id="nombreTrabajador">
+                                <h6 class="text" id="validar1"></h6>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Horas trabajadas:</label>
+                                <input type="number" class="form-control" id="horasTrabajadas">
+                                <h6 class="text" id="validar2"></h6>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" id="botonCalcular">Calcular</button>
+                            </div>
+                        </form>
+                        <h5 class="" id="resultado"></h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal IMC-->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="exampleModalLabel">Gimnasio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Ingresa tu peso:</label>
+                                <input type="number" class="form-control" id="peso">
+                                <h6 class="text" id="validar3"></h6>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-white">Ingresa tu Estatura:</label>
+                                <input type="number" class="form-control" id="estatura">
+                                <h6 class="text" id="validar4"></h6>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" id="botonCalcular2">Calcular</button>
+                            </div>
+                        </form>
+                        <h5 class="" id="resultado2"></h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1>Contactanos</h1>
+                    <p>&#9751;  Cll 55 h # 4 -10, Medellin</p>
+                    <p>     Antioquia, Colombia </p>
+                    <p>&#9743;  +57 3116660407</p>
+                    <p>&#9993;  dahiamps@gmail.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Redes Sociales</h1>
+                    <a href="https://www.facebook.com/" target="_BLANK"><i
+                            class="fab fa-facebook-square fa-4x p-3"></i></a>
+                    <a href="https://twitter.com/" target="_BLANK"><i class="fab fa-twitter-square fa-4x p-3"></i></a>
+                    <a href="https://www.instagram.com/" target="_BLANK"><i
+                            class="fab fa-instagram-square fa-4x p-3"></i></a>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Te contactamos</h1>
+
+                    <div class="d-grid gap-2">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo"
+                                aria-label="Ingresa tu correo" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">correo@ejemplo.com</span>
+                        </div>
+                        <button class="btn btn-outline-success" type="button">Aceptar</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <dic class="container">
+            <h4>Copyright ©2021, Esta pagina fue hecha por Dahiam Stiven Castaño Posso</h4>
+        </dic>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b980c82c6e.js" crossorigin="anonymous"></script>
+    <script src="controladorIMC.js"></script>
+    <script src="controladorSueldo.js"></script>
+
+
+</body>
+
+</html>
