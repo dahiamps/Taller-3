@@ -58,7 +58,7 @@ function calcularSueldo(horas, nombre) {
         let recargo = resta * 25000;
         let total = normales + recargo;
 
-        resultado.textContent = nombre + " Tus horas normales trabajas fueron: 40 que equivales a un total de: $" + normales + ", tus horas adicionales fueron " + resta + " con un valor de: $" + recargo + " y un valor total de: $" + total;
+        resultado.textContent = nombre + " Tus horas normales trabajas fueron: 40 que equivales a un total de: $" + normales + ", tus horas extras fueron " + resta + " con un valor de: $" + recargo + " obteniendo un salario total de: $" + total;
     } else {
         resultado.textContent = "Revisar datos de entrada";
     }
